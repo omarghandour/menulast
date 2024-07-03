@@ -14,7 +14,6 @@ const Menu = () => {
     });
     observer.observe(nav.current);
   }, []);
-  console.log(navV);
 
   return (
     <div className="h-full  flex justify-center flex-col overflow-x-hidden">
