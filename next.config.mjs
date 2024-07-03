@@ -4,8 +4,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "qrcgcustomers.s3-eu-west-1.amazonaws.com",
+        hostname: "*",
       },
+      // {
+      //   protocol: "https",
+      //   hostname: "external-content.duckduckgo.com",
+      // },
     ],
   },
 };

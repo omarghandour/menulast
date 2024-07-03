@@ -1,7 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: ease-in-out;
+  transition: 0.2s;
+  scroll-behavior: smooth;
+}
+body {
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
