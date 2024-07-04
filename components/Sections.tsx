@@ -1,61 +1,233 @@
 import Image from "next/image";
-const Sections = () => {
+import Link from "next/link";
+type card = {
+  id: string;
+  name: string;
+  description: string;
+  image: string;
+  price: number;
+  calories: string;
+  section: string;
+};
+const Sections = (data: any) => {
+  const cards: card[] = data.data;
+  const pizza: card[] = cards.filter((card) => card.section === "pizza");
+  const pasta: card[] = cards.filter((card) => card.section === "pasta");
+  const soup: card[] = cards.filter((card) => card.section === "soup");
+  const salad: card[] = cards.filter((card) => card.section === "salad");
+  const appetizer: card[] = cards.filter(
+    (card) => card.section === "appetizer"
+  );
+  const chickenQasadiya: card[] = cards.filter(
+    (card) => card.section === "chickenQasadiya"
+  );
+
   return (
-    <div className="sections flex-col flex  justify-center">
-      <section className="flex  justify-center" id="m6">
-        <Image
-          className="rounded-full"
-          src="https://d8aaen7rph5y9.cloudfront.net/app/mediafiles/t_1657715983_7yju44/categories/burger_16720493443112722.jpg"
-          alt=""
-          width={300}
-          height={300}
-        />
-      </section>
-      <section className="flex  justify-center" id="m2">
-        <Image
-          className="rounded-full"
-          src="https://d8aaen7rph5y9.cloudfront.net/app/mediafiles/t_1657715983_7yju44/categories/burger_16720493443112722.jpg"
-          alt=""
-          width={300}
-          height={300}
-        />
-      </section>
-      <section className="flex  justify-center" id="m3">
-        <Image
-          className="rounded-full"
-          src="https://d8aaen7rph5y9.cloudfront.net/app/mediafiles/t_1657715983_7yju44/categories/burger_16720493443112722.jpg"
-          alt=""
-          width={300}
-          height={300}
-        />
-      </section>
-      <section className="flex  justify-center" id="m4">
-        <Image
-          className="rounded-full"
-          src="https://d8aaen7rph5y9.cloudfront.net/app/mediafiles/t_1657715983_7yju44/categories/burger_16720493443112722.jpg"
-          alt=""
-          width={300}
-          height={300}
-        />
-      </section>
-      <section className="flex  justify-center" id="m5">
-        <Image
-          className="rounded-full"
-          src="https://d8aaen7rph5y9.cloudfront.net/app/mediafiles/t_1657715983_7yju44/categories/burger_16720493443112722.jpg"
-          alt=""
-          width={300}
-          height={300}
-        />
-      </section>
-      <section className="flex  justify-center" id="m1">
-        <Image
-          className="rounded-full"
-          src="https://d8aaen7rph5y9.cloudfront.net/app/mediafiles/t_1657715983_7yju44/categories/burger_16720493443112722.jpg"
-          alt=""
-          width={300}
-          height={300}
-        />
-      </section>
+    <div className="sections flex-col flex items-center  justify-center gap-5">
+      {pizza.map((card: card) => {
+        return (
+          <Link
+            className="flex flex-col items-center  justify-center w-[85%]"
+            key={card.name}
+            href={`menu/${card.id}`}
+          >
+            <section
+              id={card.section}
+              className="flex flex-col items-center  justify-center w-full gap-2"
+            >
+              <Image
+                className="rounded-md w-full"
+                src={card.image}
+                alt=""
+                width={300}
+                height={300}
+              />
+              <h2 className="text-[#86794c] font-mono font-semibold text-base text-left pt-1">
+                {card.name}
+              </h2>
+              <div className=" flex gap-3 items-center w-full">
+                <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
+                  SAR {card.price}
+                </h3>
+                <span className="text-[#86794c]">{card.calories} Calorie</span>
+              </div>
+              <p className="text-[#86794c] opacity-80 text-[14px] leading-none w-full">
+                {card.description}
+              </p>
+            </section>
+          </Link>
+        );
+      })}
+      {pasta.map((card: card) => {
+        return (
+          <Link
+            className="flex flex-col items-center  justify-center w-[85%]"
+            key={card.name}
+            href={`menu/${card.id}`}
+          >
+            <section
+              id={card.section}
+              className="flex flex-col items-center  justify-center w-full gap-2"
+            >
+              <Image
+                className="rounded-md w-full"
+                src={card.image}
+                alt=""
+                width={300}
+                height={300}
+              />
+              <h2 className="text-[#86794c] font-mono font-semibold text-base text-left pt-1">
+                {card.name}
+              </h2>
+              <div className=" flex gap-3 items-center w-full">
+                <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
+                  SAR {card.price}
+                </h3>
+                <span className="text-[#86794c]">{card.calories} Calorie</span>
+              </div>
+              <p className="text-[#86794c] opacity-80 text-[14px] leading-none w-full">
+                {card.description}
+              </p>
+            </section>
+          </Link>
+        );
+      })}
+      {soup.map((card: card) => {
+        return (
+          <Link
+            className="flex flex-col items-center  justify-center w-[85%]"
+            key={card.name}
+            href={`menu/${card.id}`}
+          >
+            <section
+              id={card.section}
+              className="flex flex-col items-center  justify-center w-full gap-2"
+            >
+              <Image
+                className="rounded-md w-full"
+                src={card.image}
+                alt=""
+                width={300}
+                height={300}
+              />
+              <h2 className="text-[#86794c] font-mono font-semibold text-base text-left pt-1">
+                {card.name}
+              </h2>
+              <div className=" flex gap-3 items-center w-full">
+                <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
+                  SAR {card.price}
+                </h3>
+                <span className="text-[#86794c]">{card.calories} Calorie</span>
+              </div>
+              <p className="text-[#86794c] opacity-80 text-[14px] leading-none w-full">
+                {card.description}
+              </p>
+            </section>
+          </Link>
+        );
+      })}
+      {salad.map((card: card) => {
+        return (
+          <Link
+            className="flex flex-col items-center  justify-center w-[85%]"
+            key={card.name}
+            href={`menu/${card.id}`}
+          >
+            <section
+              id={card.section}
+              className="flex flex-col items-center  justify-center w-full gap-2"
+            >
+              <Image
+                className="rounded-md w-full"
+                src={card.image}
+                alt=""
+                width={300}
+                height={300}
+              />
+              <h2 className="text-[#86794c] font-mono font-semibold text-base text-left pt-1">
+                {card.name}
+              </h2>
+              <div className=" flex gap-3 items-center w-full">
+                <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
+                  SAR {card.price}
+                </h3>
+                <span className="text-[#86794c]">{card.calories} Calorie</span>
+              </div>
+              <p className="text-[#86794c] opacity-80 text-[14px] leading-none w-full">
+                {card.description}
+              </p>
+            </section>
+          </Link>
+        );
+      })}
+      {appetizer.map((card: card) => {
+        return (
+          <Link
+            className="flex flex-col items-center  justify-center w-[85%]"
+            key={card.name}
+            href={`menu/${card.id}`}
+          >
+            <section
+              id={card.section}
+              className="flex flex-col items-center  justify-center w-full gap-2"
+            >
+              <Image
+                className="rounded-md w-full"
+                src={card.image}
+                alt=""
+                width={300}
+                height={300}
+              />
+              <h2 className="text-[#86794c] font-mono font-semibold text-base text-left pt-1">
+                {card.name}
+              </h2>
+              <div className=" flex gap-3 items-center w-full">
+                <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
+                  SAR {card.price}
+                </h3>
+                <span className="text-[#86794c]">{card.calories} Calorie</span>
+              </div>
+              <p className="text-[#86794c] opacity-80 text-[14px] leading-none w-full">
+                {card.description}
+              </p>
+            </section>
+          </Link>
+        );
+      })}
+      {chickenQasadiya.map((card: card) => {
+        return (
+          <Link
+            className="flex flex-col items-center  justify-center w-[85%] mb-3"
+            key={card.name}
+            href={`menu/${card.id}`}
+          >
+            <section
+              id={card.section}
+              className="flex flex-col items-center  justify-center w-full gap-2"
+            >
+              <Image
+                className="rounded-md w-full"
+                src={card.image}
+                alt=""
+                width={300}
+                height={300}
+              />
+              <h2 className="text-[#86794c] font-mono font-semibold text-base text-left pt-1">
+                {card.name}
+              </h2>
+              <div className=" flex gap-3 items-center w-full">
+                <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
+                  SAR {card.price}
+                </h3>
+                <span className="text-[#86794c]">{card.calories} Calorie</span>
+              </div>
+              <p className="text-[#86794c] opacity-80 text-[14px] leading-none w-full">
+                {card.description}
+              </p>
+            </section>
+          </Link>
+        );
+      })}
     </div>
   );
 };

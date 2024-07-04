@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
 import instagram from "../public/instagram-svgrepo-com.svg";
-import facebook from "../public/facebook-svgrepo-com.svg";
+import tiktok from "../public/tiktok-svgrepo-com.svg";
+import snapchat from "../public/snapchat-136-svgrepo-com.svg";
+import mainlogo from "../public/pdrr.png";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 const Menu = () => {
@@ -22,12 +24,10 @@ const Menu = () => {
         className="flex justify-center flex-col pt-64 z-[17] items-center
       "
       >
-        <div className="mb-5">
+        <div className="mb-5 bg-[#86794c] rounded-full p-3">
           <Image
             className="rounded-full"
-            src={
-              "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-777ezCUIDfs%2FWmMN8OFSNoI%2FAAAAAAAABlI%2Fds7FUC3ec3UcNZmhpR0Dx5-S-hUkeMb8gCLcBGAs%2Fs1600%2Flionel-messi-4500x3000-soccer-football-the-best-players-2016-4k-14581.jpg&f=1&nofb=1&ipt=b9ca74bb24467e130456307826cba2f9f467b58692c8ecad15161b61b48a9536&ipo=images"
-            }
+            src={mainlogo}
             alt=""
             width={100}
             height={100}
@@ -39,85 +39,111 @@ const Menu = () => {
           </h4>
         </div>
         <div className="flex gap-3 mb-5">
-          <Image src={instagram} width={25} height={25} alt="" />
-          <Image src={facebook} width={25} height={25} alt="" />
+          <Link href={"https://www.instagram.com/pastaderome28"}>
+            <Image src={instagram} width={25} height={25} alt="" />
+          </Link>
+          <Link
+            href={"https://www.tiktok.com/@pastaderome28?_t=8nT15UtLrh2&_r=1"}
+          >
+            <Image src={tiktok} width={25} height={25} alt="" />
+          </Link>
+          <Link
+            href={
+              "https://www.snapchat.com/add/pastaderome28?share_id=mTQA-7oggfM&locale=en-US"
+            }
+          >
+            <Image src={snapchat} width={25} height={25} alt="" />
+          </Link>
         </div>
       </div>
       <div className="overflow-x-scroll h-24">
         <div className={`overflow-x-scroll `} ref={nav}>
           <div
-            className={`flex overflow-x-scroll  h-24 w-[130%] text-[#86794c] text-center ${
+            className={`flex overflow-x-scroll  h-24  text-[#86794c] text-center ${
               navV
-                ? ""
+                ? "w-[150%]"
                 : "fixed top-0 z-50 left-0 right-0 h-fit outline-none w-[95%] mb-5 mx-auto scr   p-1 bg-black "
             }`}
           >
             <div
-              className={`flex justify-around${
+              className={`flex justify-around flex-row-reverse ${
                 navV
                   ? " overflow-x-scroll h-full  w-full items-center"
-                  : "  overflow-x-scroll gap-5 h-fit outline-none"
+                  : "  overflow-x-scroll gap-3 h-fit outline-none"
               }`}
             >
-              {" "}
-              <div className="h-20 w-20 flex items-center">
-                <Link href={"#m1"}>
+              <div className="h-20 w-20 flex items-center ">
+                <Link href={"#chickenQasadiya"}>
                   <Image
                     className="rounded-full"
-                    src="https://d8aaen7rph5y9.cloudfront.net/app/mediafiles/t_1657715983_7yju44/categories/burger_16720493443112722.jpg"
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kyleecooks.com%2Fwp-content%2Fuploads%2F2021%2F01%2FChicken-Quesadillas-14.jpg&f=1&nofb=1&ipt=8fd3e1a5f75fa535e0f1bd3713fe1b7376b3952fff946a8bb7707c3849e2a166&ipo=images"
                     alt=""
                     width={300}
                     height={300}
                   />
-                  Stack
+                  <span>{!navV ? "CQ" : "Qasadiya"}</span>
                 </Link>
               </div>
               <div className="h-20 w-20 flex items-center">
-                <Link href={"#m1"}>
+                <Link href={"#appetizer"}>
                   <Image
                     className="rounded-full"
-                    src="https://d8aaen7rph5y9.cloudfront.net/app/mediafiles/t_1657715983_7yju44/categories/burger_16720493443112722.jpg"
+                    src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Firepo.primecp.com%2F2019%2F02%2F402087%2FDynamite-Shrimp-_ExtraLarge1000_ID-3102085.jpg%3Fv%3D3102085&f=1&nofb=1&ipt=91ccbaae721cb9f0fb129e657fa207e171654801b2b07e7f7f82c9175d9be971&ipo=images"
                     alt=""
                     width={300}
                     height={300}
                   />
-                  Stack
+                  <span className={`${!navV ? "text-[12px]" : ""}`}>
+                    Appetizer
+                  </span>
                 </Link>
               </div>
               <div className="h-20 w-20 flex items-center">
-                <Link href={"#m1"}>
+                <Link href={"#salad"}>
                   <Image
                     className="rounded-full"
-                    src="https://d8aaen7rph5y9.cloudfront.net/app/mediafiles/t_1657715983_7yju44/categories/burger_16720493443112722.jpg"
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thespruceeats.com%2Fthmb%2FZ6IWF7c9zywuU9maSIimGLbHoI4%3D%2F3000x2000%2Ffilters%3Afill(auto%2C1)%2Fclassic-caesar-salad-recipe-996054-Hero_01-33c94cc8b8e841ee8f2a815816a0af95.jpg&f=1&nofb=1&ipt=ab224fa85fa60a5a3cf146c308554a7f04fe367cf25c80001e7789b9c131e18a&ipo=images"
                     alt=""
                     width={300}
                     height={300}
                   />
-                  Stack
+                  <span>Salad</span>
                 </Link>
               </div>
               <div className="h-20 w-20 flex items-center">
-                <Link href={"#m1"}>
+                <Link href={"#soup"}>
                   <Image
                     className="rounded-full"
-                    src="https://d8aaen7rph5y9.cloudfront.net/app/mediafiles/t_1657715983_7yju44/categories/burger_16720493443112722.jpg"
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.deliveryhero.io%2Fimage%2Ffoodpanda%2Frecipes%2Fmushroom-soup-recipe-1.jpg&f=1&nofb=1&ipt=651ae7460aacf3fbcab8b2b664a5b5245bb3b9f0674bdab4a488c9158ce7bc46&ipo=images"
                     alt=""
                     width={300}
                     height={300}
                   />
-                  Stack
+                  <span>Soup</span>
                 </Link>
               </div>
               <div className="h-20 w-20 flex items-center">
-                <Link href={"#m1"}>
+                <Link href={"#pasta"}>
                   <Image
                     className="rounded-full"
-                    src="https://d8aaen7rph5y9.cloudfront.net/app/mediafiles/t_1657715983_7yju44/categories/burger_16720493443112722.jpg"
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flestta.com%2Fwp-content%2Fuploads%2F2021%2F03%2FPasta-2048x1366.jpg&f=1&nofb=1&ipt=db470ccc6cfe7e90f538389522c3b2f3173be9d24da7a21a8b1f7074354b046e&ipo=images"
                     alt=""
                     width={300}
                     height={300}
                   />
-                  Stack
+                  <span>Pasta</span>
+                </Link>
+              </div>
+              <div className="h-20 w-20 flex items-center">
+                <Link href={"#pizza"}>
+                  <Image
+                    className="rounded-full"
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.biggerbolderbaking.com%2Fwp-content%2Fuploads%2F2021%2F02%2FNew-York-Style-Pizza-Thumbnail1-scaled.jpg&f=1&nofb=1&ipt=62f50d7d79be7e7af34b8f835579c9683915eb0c08bcf9aeee3dc053c5aeff3c&ipo=images"
+                    alt=""
+                    width={300}
+                    height={300}
+                  />
+                  <span>Pizza</span>
                 </Link>
               </div>
             </div>
