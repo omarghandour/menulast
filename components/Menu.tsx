@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from "react";
 const Menu = () => {
   const nav: any = useRef<HTMLDivElement>(null);
   const [navV, setNaV] = useState<any>();
+  const [current, setCurrent] = useState("pizza");
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
@@ -56,7 +57,7 @@ const Menu = () => {
           </Link>
         </div>
       </div>
-      <div className="overflow-x-scroll h-24">
+      <div className="overflow-x-scroll h-24 ">
         <div className={`overflow-x-scroll `} ref={nav}>
           <div
             className={`flex overflow-x-scroll  h-24  text-[#86794c] text-center ${
@@ -72,10 +73,23 @@ const Menu = () => {
                   : "  overflow-x-scroll gap-3 h-fit outline-none"
               }`}
             >
-              <div className="h-20 w-20 flex items-center ">
-                <Link href={"#chickenQasadiya"}>
+              <div
+                className={`h-20 w-20 flex items-center ${
+                  current === "chickenQasadiya"
+                    ? "border border-[#86794c] border-[solid] rounded-md p-2"
+                    : ""
+                }`}
+              >
+                <Link
+                  href={"#chickenQasadiya"}
+                  onClick={() => setCurrent("chickenQasadiya")}
+                >
                   <Image
-                    className="rounded-full"
+                    className={`rounded-full ${
+                      current === "chickenQasadiya"
+                        ? "border-[2px] border-white"
+                        : ""
+                    }`}
                     src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kyleecooks.com%2Fwp-content%2Fuploads%2F2021%2F01%2FChicken-Quesadillas-14.jpg&f=1&nofb=1&ipt=8fd3e1a5f75fa535e0f1bd3713fe1b7376b3952fff946a8bb7707c3849e2a166&ipo=images"
                     alt=""
                     width={300}
@@ -84,8 +98,17 @@ const Menu = () => {
                   <span>{!navV ? "CQ" : "Qasadiya"}</span>
                 </Link>
               </div>
-              <div className="h-20 w-20 flex items-center">
-                <Link href={"#appetizer"}>
+              <div
+                className={`h-20 w-20 flex items-center ${
+                  current === "appetizer"
+                    ? "border border-[#86794c] border-[solid] rounded-md p-2"
+                    : ""
+                }`}
+              >
+                <Link
+                  href={"#appetizer"}
+                  onClick={() => setCurrent("appetizer")}
+                >
                   <Image
                     className="rounded-full"
                     src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Firepo.primecp.com%2F2019%2F02%2F402087%2FDynamite-Shrimp-_ExtraLarge1000_ID-3102085.jpg%3Fv%3D3102085&f=1&nofb=1&ipt=91ccbaae721cb9f0fb129e657fa207e171654801b2b07e7f7f82c9175d9be971&ipo=images"
@@ -98,8 +121,14 @@ const Menu = () => {
                   </span>
                 </Link>
               </div>
-              <div className="h-20 w-20 flex items-center">
-                <Link href={"#salad"}>
+              <div
+                className={`h-20 w-20 flex items-center ${
+                  current === "salad"
+                    ? "border border-[#86794c] border-[solid] rounded-md p-2"
+                    : ""
+                }`}
+              >
+                <Link href={"#salad"} onClick={() => setCurrent("salad")}>
                   <Image
                     className="rounded-full"
                     src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thespruceeats.com%2Fthmb%2FZ6IWF7c9zywuU9maSIimGLbHoI4%3D%2F3000x2000%2Ffilters%3Afill(auto%2C1)%2Fclassic-caesar-salad-recipe-996054-Hero_01-33c94cc8b8e841ee8f2a815816a0af95.jpg&f=1&nofb=1&ipt=ab224fa85fa60a5a3cf146c308554a7f04fe367cf25c80001e7789b9c131e18a&ipo=images"
@@ -110,8 +139,14 @@ const Menu = () => {
                   <span>Salad</span>
                 </Link>
               </div>
-              <div className="h-20 w-20 flex items-center">
-                <Link href={"#soup"}>
+              <div
+                className={`h-20 w-20 flex items-center ${
+                  current === "soup"
+                    ? "border border-[#86794c] border-[solid] rounded-md p-2"
+                    : ""
+                }`}
+              >
+                <Link href={"#soup"} onClick={() => setCurrent("soup")}>
                   <Image
                     className="rounded-full"
                     src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.deliveryhero.io%2Fimage%2Ffoodpanda%2Frecipes%2Fmushroom-soup-recipe-1.jpg&f=1&nofb=1&ipt=651ae7460aacf3fbcab8b2b664a5b5245bb3b9f0674bdab4a488c9158ce7bc46&ipo=images"
@@ -122,8 +157,14 @@ const Menu = () => {
                   <span>Soup</span>
                 </Link>
               </div>
-              <div className="h-20 w-20 flex items-center">
-                <Link href={"#pasta"}>
+              <div
+                className={`h-20 w-20 flex items-center ${
+                  current === "pasta"
+                    ? "border border-[#86794c] border-[solid] rounded-md p-2"
+                    : ""
+                }`}
+              >
+                <Link href={"#pasta"} onClick={() => setCurrent("pasta")}>
                   <Image
                     className="rounded-full"
                     src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flestta.com%2Fwp-content%2Fuploads%2F2021%2F03%2FPasta-2048x1366.jpg&f=1&nofb=1&ipt=db470ccc6cfe7e90f538389522c3b2f3173be9d24da7a21a8b1f7074354b046e&ipo=images"
@@ -134,8 +175,14 @@ const Menu = () => {
                   <span>Pasta</span>
                 </Link>
               </div>
-              <div className="h-20 w-20 flex items-center">
-                <Link href={"#pizza"}>
+              <div
+                className={`h-20 w-20 flex items-center ${
+                  current === "pizza"
+                    ? "border border-[#86794c] border-[solid] rounded-md p-2"
+                    : ""
+                }`}
+              >
+                <Link href={"#pizza"} onClick={() => setCurrent("pizza")}>
                   <Image
                     className="rounded-full"
                     src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.biggerbolderbaking.com%2Fwp-content%2Fuploads%2F2021%2F02%2FNew-York-Style-Pizza-Thumbnail1-scaled.jpg&f=1&nofb=1&ipt=62f50d7d79be7e7af34b8f835579c9683915eb0c08bcf9aeee3dc053c5aeff3c&ipo=images"

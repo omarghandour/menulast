@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
-
+import homeLogo from "../public/pastaderoma.jpeg";
 const HomePage = () => {
   return (
     <div>
@@ -20,9 +20,7 @@ const HomePage = () => {
         </div>
         <div>
           <Image
-            src={
-              "https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account9820877/42799524_1.png?0.39937057245297813"
-            }
+            src={homeLogo}
             width={350}
             height={350}
             alt=""
@@ -30,11 +28,8 @@ const HomePage = () => {
           />
         </div>
         <div className="text-center my-10 mx-auto max-w-[350px]">
-          <p className="text-[#616568] opacity-80 text-[14px] leading-none">
-            سماش واقيو برجر غرام135 لحم واقيو - جبن مونتيري جالك - جبن شيدر -
-            شرائح خيار مخلل - شرائح بصل - صوص واقيو 135 gm wagyu beef -cheedar
-            cheese - Montry Jack cheese - onion Slice- Pickles - Wagyu Sauce
-          </p>
+          {/* <p className="text-[#616568] opacity-80 text-[14px] leading-none">
+          </p> */}
         </div>
       </div>
     </div>
