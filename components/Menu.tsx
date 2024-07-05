@@ -85,11 +85,7 @@ const Menu = () => {
                   onClick={() => setCurrent("chickenQasadiya")}
                 >
                   <Image
-                    className={`rounded-full ${
-                      current === "chickenQasadiya"
-                        ? "border-[2px] border-white"
-                        : ""
-                    }`}
+                    className="rounded-full"
                     src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kyleecooks.com%2Fwp-content%2Fuploads%2F2021%2F01%2FChicken-Quesadillas-14.jpg&f=1&nofb=1&ipt=8fd3e1a5f75fa535e0f1bd3713fe1b7376b3952fff946a8bb7707c3849e2a166&ipo=images"
                     alt=""
                     width={300}
