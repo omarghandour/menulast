@@ -9,7 +9,7 @@ const HomePage = () => {
       {/* bg */}
       <div className="flex flex-col items-center mt-14 ">
         <div className="text-xl mb-5">
-          <h1 className="text-[#86794c]">PASTA DE ROMA</h1>
+          <h1 className="text-[#86794c]">PASTA DE ROME</h1>
         </div>
         <div className="mb-5">
           <Link href={"/menu"}>

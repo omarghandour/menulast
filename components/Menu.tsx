@@ -36,7 +36,7 @@ const Menu = () => {
         </div>
         <div>
           <h4 className="text-[#86794c] font-mono font-semibold text-2xl">
-            Pasta De Roma
+            Pasta De Rome
           </h4>
         </div>
         <div className="flex gap-3 mb-5">
