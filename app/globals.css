@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap");
 
 * {
   margin: 0;
@@ -10,11 +11,19 @@
   transition: 0.2s;
   scroll-behavior: smooth;
   -ms-overflow-style: none;
+  font-family: "Fustat", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 ::-webkit-scrollbar {
   display: none;
 }
 body {
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 @layer base {
   :root {

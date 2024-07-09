@@ -24,6 +24,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/logoblack.jpeg" type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body
         className={cn(

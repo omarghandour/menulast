@@ -25,9 +25,10 @@ const Menu = () => {
         className="flex justify-center flex-col pt-64 z-[17] items-center
       "
       >
-        <div className="mb-5 bg-[#86794c] rounded-full p-3">
+        <div className="mb-5 bg-black rounded-full p-3">
           <Image
-            className="rounded-full"
+            className=""
+            loading="lazy"
             src={mainlogo}
             alt=""
             width={100}
@@ -35,7 +36,7 @@ const Menu = () => {
           />
         </div>
         <div>
-          <h4 className="text-[#86794c] font-mono font-semibold text-2xl">
+          <h4 className="text-white font-mono font-semibold text-2xl">
             Pasta De Rome
           </h4>
         </div>
@@ -60,7 +61,7 @@ const Menu = () => {
       <div className="overflow-x-scroll h-24 ">
         <div className={`overflow-x-scroll `} ref={nav}>
           <div
-            className={`flex overflow-x-scroll  h-24  text-[#86794c] text-center ${
+            className={`flex overflow-x-scroll  h-24  text-white text-center ${
               navV
                 ? "w-[150%]"
                 : "fixed top-0 z-50 left-0 right-0 h-fit outline-none w-[95%] mb-5 mx-auto scr   p-1 bg-black "

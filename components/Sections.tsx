@@ -8,6 +8,7 @@ type card = {
   price: number;
   calories: string;
   section: string;
+  longDescription: string;
 };
 const Sections = (data: any) => {
   const cards: card[] = data.data;
@@ -29,7 +30,7 @@ const Sections = (data: any) => {
           <Link
             className="flex flex-col items-center  justify-center w-[85%]"
             key={card.name}
-            href={`menu/${card.id}`}
+            href={`${card.id}`}
           >
             <section
               id={card.section}
@@ -41,17 +42,21 @@ const Sections = (data: any) => {
                 alt=""
                 width={300}
                 height={300}
+                loading="lazy"
               />
-              <h2 className="text-[#86794c] font-mono font-semibold text-base text-left pt-1">
+              <h2 className="text-white font-mono font-semibold text-base text-left pt-1">
                 {card.name}
               </h2>
               <div className=" flex gap-3 items-center w-full">
-                <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
+                <h3 className="bg-white text-[0.75rem] font-bold text-black rounded-md px-2">
                   SAR {card.price}
                 </h3>
-                <span className="text-[#86794c]">{card.calories} Calorie</span>
+                <span className="text-white">{card.calories} Calorie</span>
               </div>
-              <p className="text-[#86794c] opacity-80 text-[14px] leading-none w-full">
+              <p className="text-white opacity-80 text-[14px] leading-none w-full">
+                {card.longDescription}
+              </p>
+              <p className="text-white opacity-80 text-[14px] leading-none w-full">
                 {card.description}
               </p>
             </section>
@@ -63,7 +68,7 @@ const Sections = (data: any) => {
           <Link
             className="flex flex-col items-center  justify-center w-[85%]"
             key={card.name}
-            href={`menu/${card.id}`}
+            href={`${card.id}`}
           >
             <section
               id={card.section}
@@ -75,17 +80,21 @@ const Sections = (data: any) => {
                 alt=""
                 width={300}
                 height={300}
+                loading="lazy"
               />
-              <h2 className="text-[#86794c] font-mono font-semibold text-base text-left pt-1">
+              <h2 className="text-white font-mono font-semibold text-base text-left pt-1">
                 {card.name}
               </h2>
               <div className=" flex gap-3 items-center w-full">
-                <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
+                <h3 className="bg-white text-[0.75rem] font-bold text-black rounded-md px-2">
                   SAR {card.price}
                 </h3>
-                <span className="text-[#86794c]">{card.calories} Calorie</span>
+                <span className="text-white">{card.calories} Calorie</span>
               </div>
-              <p className="text-[#86794c] opacity-80 text-[14px] leading-none w-full">
+              <p className="text-white opacity-80 text-[14px] leading-none w-full">
+                {card.longDescription}
+              </p>
+              <p className="text-white opacity-80 text-[14px] leading-none w-full">
                 {card.description}
               </p>
             </section>
@@ -97,7 +106,7 @@ const Sections = (data: any) => {
           <Link
             className="flex flex-col items-center  justify-center w-[85%]"
             key={card.name}
-            href={`menu/${card.id}`}
+            href={`${card.id}`}
           >
             <section
               id={card.section}
@@ -109,17 +118,21 @@ const Sections = (data: any) => {
                 alt=""
                 width={300}
                 height={300}
+                loading="lazy"
               />
-              <h2 className="text-[#86794c] font-mono font-semibold text-base text-left pt-1">
+              <h2 className="text-white font-mono font-semibold text-base text-left pt-1">
                 {card.name}
               </h2>
               <div className=" flex gap-3 items-center w-full">
-                <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
+                <h3 className="bg-white text-[0.75rem] font-bold text-black rounded-md px-2">
                   SAR {card.price}
                 </h3>
-                <span className="text-[#86794c]">{card.calories} Calorie</span>
+                <span className="text-white">{card.calories} Calorie</span>
               </div>
-              <p className="text-[#86794c] opacity-80 text-[14px] leading-none w-full">
+              <p className="text-white opacity-80 text-[14px] leading-none w-full">
+                {card.longDescription}
+              </p>
+              <p className="text-white opacity-80 text-[14px] leading-none w-full">
                 {card.description}
               </p>
             </section>
@@ -131,7 +144,7 @@ const Sections = (data: any) => {
           <Link
             className="flex flex-col items-center  justify-center w-[85%]"
             key={card.name}
-            href={`menu/${card.id}`}
+            href={`${card.id}`}
           >
             <section
               id={card.section}
@@ -143,17 +156,21 @@ const Sections = (data: any) => {
                 alt=""
                 width={300}
                 height={300}
+                loading="lazy"
               />
-              <h2 className="text-[#86794c] font-mono font-semibold text-base text-left pt-1">
+              <h2 className="text-white font-mono font-semibold text-base text-left pt-1">
                 {card.name}
               </h2>
               <div className=" flex gap-3 items-center w-full">
-                <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
+                <h3 className="bg-white text-[0.75rem] font-bold text-black rounded-md px-2">
                   SAR {card.price}
                 </h3>
-                <span className="text-[#86794c]">{card.calories} Calorie</span>
+                <span className="text-white">{card.calories} Calorie</span>
               </div>
-              <p className="text-[#86794c] opacity-80 text-[14px] leading-none w-full">
+              <p className="text-white opacity-80 text-[14px] leading-none w-full">
+                {card.longDescription}
+              </p>
+              <p className="text-white opacity-80 text-[14px] leading-none w-full">
                 {card.description}
               </p>
             </section>
@@ -165,7 +182,7 @@ const Sections = (data: any) => {
           <Link
             className="flex flex-col items-center  justify-center w-[85%]"
             key={card.name}
-            href={`menu/${card.id}`}
+            href={`${card.id}`}
           >
             <section
               id={card.section}
@@ -177,17 +194,21 @@ const Sections = (data: any) => {
                 alt=""
                 width={300}
                 height={300}
+                loading="lazy"
               />
-              <h2 className="text-[#86794c] font-mono font-semibold text-base text-left pt-1">
+              <h2 className="text-white font-mono font-semibold text-base text-left pt-1">
                 {card.name}
               </h2>
               <div className=" flex gap-3 items-center w-full">
-                <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
+                <h3 className="bg-white text-[0.75rem] font-bold text-black rounded-md px-2">
                   SAR {card.price}
                 </h3>
-                <span className="text-[#86794c]">{card.calories} Calorie</span>
+                <span className="text-white">{card.calories} Calorie</span>
               </div>
-              <p className="text-[#86794c] opacity-80 text-[14px] leading-none w-full">
+              <p className="text-white opacity-80 text-[14px] leading-none w-full">
+                {card.longDescription}
+              </p>{" "}
+              <p className="text-white opacity-80 text-[14px] leading-none w-full">
                 {card.description}
               </p>
             </section>
@@ -199,7 +220,7 @@ const Sections = (data: any) => {
           <Link
             className="flex flex-col items-center  justify-center w-[85%] mb-3"
             key={card.name}
-            href={`menu/${card.id}`}
+            href={`${card.id}`}
           >
             <section
               id={card.section}
@@ -211,17 +232,21 @@ const Sections = (data: any) => {
                 alt=""
                 width={300}
                 height={300}
+                loading="lazy"
               />
-              <h2 className="text-[#86794c] font-mono font-semibold text-base text-left pt-1">
+              <h2 className="text-white font-mono font-semibold text-base text-left pt-1">
                 {card.name}
               </h2>
               <div className=" flex gap-3 items-center w-full">
-                <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
+                <h3 className="bg-white text-[0.75rem] font-bold text-black rounded-md px-2">
                   SAR {card.price}
                 </h3>
-                <span className="text-[#86794c]">{card.calories} Calorie</span>
+                <span className="text-white">{card.calories} Calorie</span>
               </div>
-              <p className="text-[#86794c] opacity-80 text-[14px] leading-none w-full">
+              <p className="text-white opacity-80 text-[14px] leading-none w-full">
+                {card.longDescription}
+              </p>
+              <p className="text-white opacity-80 text-[14px] leading-none w-full">
                 {card.description}
               </p>
             </section>
