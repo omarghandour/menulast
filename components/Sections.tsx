@@ -48,7 +48,7 @@ const Sections = (data: any) => {
                 {card.name}
               </h2>
               <div className=" flex gap-3 items-center w-full">
-                <h3 className="bg-white text-[0.75rem] font-bold text-black rounded-md px-2">
+                <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
                   SAR {card.price}
                 </h3>
                 <span className="text-white">{card.calories} Calorie</span>
