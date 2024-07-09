@@ -20,10 +20,11 @@
   display: none;
 }
 body {
-  font-family: "Fustat", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 @layer base {
   :root {

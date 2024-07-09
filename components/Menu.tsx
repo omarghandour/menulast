@@ -25,7 +25,7 @@ const Menu = () => {
         className="flex justify-center flex-col pt-64 z-[17] items-center
       "
       >
-        <div className="mb-5 bg-black rounded-full p-3">
+        <div className="mb-5 bg-[#86794c] rounded-full p-3">
           <Image
             className=""
             loading="lazy"
@@ -40,7 +40,7 @@ const Menu = () => {
             Pasta De Rome
           </h4>
         </div>
-        <div className="flex gap-3 mb-5">
+        <div className="flex gap-3 mb-5 mt-[10px]">
           <Link href={"https://www.instagram.com/pastaderome28"}>
             <Image src={instagram} width={25} height={25} alt="" />
           </Link>
