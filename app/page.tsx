@@ -1,10 +1,8 @@
-import HomePage from "@/components/HomePage";
 import Link from "next/link";
-import jj from "../public/home.png";
 import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
-    <main className="h-[100svh] flex-col items-center flex justify-between w-full bg-[url('../public/home.png')] bg-center bg-cover">
+    <main className="h-[100svh] flex-col items-center flex justify-between w-full bg-[url('../public/home1.png')] bg-center bg-cover">
       {/* <HomePage /> */}
       <Link prefetch={true} href={"/menu"} className="mt-16">
         <Button className="bg-white text-black p-[25px]">
