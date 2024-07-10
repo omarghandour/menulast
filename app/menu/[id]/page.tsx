@@ -29,7 +29,6 @@ export function generateStaticParams() {
     { id: "15" },
     { id: "16" },
     { id: "17" },
-    { id: "18" },
   ];
 }
 const page = () => {
