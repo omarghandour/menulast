@@ -82,19 +82,6 @@ const data: Data[] = [
   },
   {
     id: "7",
-    name: "Futtuchini Shiny - فوتتشيني شايني",
-    description:
-      "Shrimp, Mushroom, Greenbel, Permisan, Mozzarella, White Sauce and Cream",
-    image:
-      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fitalianexpressonline.com%2Fwp-content%2Fuploads%2F2019%2F05%2Ffettucinealfredo.jpg&f=1&nofb=1&ipt=13eb215e5db0be2f9eff2229aa6757bc823a3670c015a6eb2e35e3886b6a8111&ipo=images",
-    price: "12.99",
-    calories: "20",
-    section: "pasta",
-    longDescription:
-      " ربيان, فطر, فلفل بارد, جبن برميزان, مزريلا, صلصة ابيض مع كريم",
-  },
-  {
-    id: "8",
     name: "Pasta Tiano - باستا تيانو",
     description:
       "Grilled Chicken, Fresh Mushroom, VEG, Garlic, Permisan, Mozzarella, Pink Sauce and Cream",
@@ -107,7 +94,7 @@ const data: Data[] = [
       "دجاج صحر مشوي, فطر طازج, خضار, ثوم, جبن برميزان, مزريلا, صوص بنط مع كريمة",
   },
   {
-    id: "9",
+    id: "8",
     name: "Pasta Vince - باستا فينيسيا",
     description:
       "Grilled Chicken, Fresh Mushroom, VEG, Garlic, Permisan, Mozzarella, Pink Sauce and Cream",
@@ -120,7 +107,7 @@ const data: Data[] = [
       "دجاج صحر مشوي, فطر طازج, خضار, ثوم, جبن برميزان, مزريلا, صوص بنك مع كريمة",
   },
   {
-    id: "10",
+    id: "9",
     name: "Spaghetti Plermo - سباجتي بليرمو",
     description: "Chicken, VEG and SOY Sauce",
     image:
@@ -131,7 +118,7 @@ const data: Data[] = [
     longDescription: "دجاج, خضار, صلصة صويا",
   },
   {
-    id: "11",
+    id: "10",
     name: "Spaghetti Juliano - سباجتي جوليانو",
     description: "Chicken, VEG and Red Sauce",
     image:
@@ -142,7 +129,7 @@ const data: Data[] = [
     longDescription: "دجاج, خضار, صوص احمر",
   },
   {
-    id: "12",
+    id: "11",
     name: "Mushroom Soup - شوربة الفطر",
     description: "Mushroom with Cream",
     image:
@@ -153,7 +140,7 @@ const data: Data[] = [
     longDescription: "فطر مع كريمة",
   },
   {
-    id: "13",
+    id: "12",
     name: "Chicken Soup - شوربة دجاج",
     description: "Chicken and Corn with Cream",
     image:
@@ -164,7 +151,7 @@ const data: Data[] = [
     longDescription: "دجاج, ذرة مع كريمة",
   },
   {
-    id: "14",
+    id: "13",
     name: "Ceaser Salad - سلطة سيزر",
     description:
       "American Lettuce, Grilled Chicken, Cheese Permisan, Dry Bread and Ranch Sauce",
@@ -176,7 +163,7 @@ const data: Data[] = [
     longDescription: "خس امريكي, دجاج مشوي, جبن برميزان, خبز مجفف, صوص رنش",
   },
   {
-    id: "15",
+    id: "14",
     name: "Jirjir Salad - سلطة الجرجير",
     description:
       "Jirjir, Fresh Mushroom, Pine Nuts, Cheese Permisan, Dried Tomato, Red Onion With Palsamic Sauce",
@@ -188,7 +175,7 @@ const data: Data[] = [
     longDescription: "جرجير, فطر, سنوبر, جبن, طماطم مجفف, بصل, صوص بالسامك",
   },
   {
-    id: "16",
+    id: "15",
     name: "Dynamite Shrimp - دينامت ربيان",
     description: "Fried Shrimp with Dynamite Sauce",
     image:
@@ -199,7 +186,7 @@ const data: Data[] = [
     longDescription: "ربيان مقلي, صوص داينمت",
   },
   {
-    id: "17",
+    id: "16",
     name: "French Fries - بطاطس مقلي",
     description: "French Fries",
     image:
@@ -210,7 +197,7 @@ const data: Data[] = [
     longDescription: "بطاطس مقلية",
   },
   {
-    id: "18",
+    id: "17",
     name: "Chicken Qasadiya - كسادية دجاج",
     description: "Tortilla, Grilled Chicken, Cheese, Tomato and Sauce Special",
     image:
