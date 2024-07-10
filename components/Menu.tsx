@@ -2,7 +2,7 @@
 import Image from "next/image";
 import instagram from "../public/instagram-svgrepo-com.svg";
 import tiktok from "../public/tiktok-svgrepo-com.svg";
-import snapchat from "../public/snapchat-136-svgrepo-com.svg";
+import location from "../public/location.svg";
 import mainlogo from "../public/pdrr.png";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -51,10 +51,10 @@ const Menu = () => {
           </Link>
           <Link
             href={
-              "https://www.snapchat.com/add/pastaderome28?share_id=mTQA-7oggfM&locale=en-US"
+              "https://maps.app.goo.gl/Z9M6YszpyVbDxGtv8?g_st=com.google.maps.preview.copy"
             }
           >
-            <Image src={snapchat} width={25} height={25} alt="" />
+            <Image src={location} width={25} height={25} alt="" />
           </Link>
         </div>
       </div>
