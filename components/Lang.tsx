@@ -10,9 +10,18 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { setCookie } from "@/app/cookie/setCookie";
+import { getCookie, setCookie } from "@/app/cookie/setCookie";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 const Lang = () => {
+  const [en, setEn] = useState();
+  const ss = async () => {
+    const cc: any = await getCookie();
+    setEn(cc);
+  };
+  useEffect(() => {
+    ss();
+  });
   return (
     <div className="z-10">
       <Select
@@ -22,20 +31,20 @@ const Lang = () => {
         }}
       >
         <SelectTrigger className="w-full bg-[#86794c] text-white">
-          <SelectValue placeholder="Language" />
+          <SelectValue placeholder={en === "english" ? "Language" : "اللغة"} />
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
-            <SelectLabel>Languages</SelectLabel>
-            <SelectItem value="arabic">
-              <div className="flex items-center gap-5">
+            <SelectLabel>{en === "english" ? "Language" : "اللغة"}</SelectLabel>
+            <SelectItem value="arabic" className="w-full">
+              <div className="flex items-center gap-5 justify-between w-full">
+                <Image src={saudi} width={30} height={30} alt="" />
                 <div>AR</div>{" "}
-                <Image src={saudi} width={50} height={50} alt="" />
               </div>
             </SelectItem>
             <SelectItem value="english">
-              <div className="flex items-center gap-5">
-                <div>ENG</div> <Image src={UK} width={50} height={50} alt="" />
+              <div className="flex items-center gap-5 justify-between w-full">
+                <Image src={UK} width={30} height={30} alt="" /> <div>ENG</div>
               </div>
             </SelectItem>
           </SelectGroup>
