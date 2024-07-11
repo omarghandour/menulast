@@ -26,10 +26,10 @@ export default function RootLayout({
         <link rel="icon" href="/logoblack.jpeg" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
           rel="stylesheet"
-        />
+        /> */}
       </head>
       <body
         className={cn(
