@@ -11,12 +11,14 @@ type Data = {
   calories: string;
   section: string;
   longDescription: string;
+  nameAr: string;
 };
 const page = async () => {
   const data: Data[] = [
     {
       id: "1",
-      name: "Pizza Margrita - بيتزا مارجريتا",
+      name: "Pizza Margrita",
+      nameAr: " بيتزا مارجريتا",
       description: "Tomato Sauce, Cheese",
       image:
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.biggerbolderbaking.com%2Fwp-content%2Fuploads%2F2021%2F02%2FNew-York-Style-Pizza-Thumbnail1-scaled.jpg&f=1&nofb=1&ipt=62f50d7d79be7e7af34b8f835579c9683915eb0c08bcf9aeee3dc053c5aeff3c&ipo=images",
@@ -27,7 +29,8 @@ const page = async () => {
     },
     {
       id: "2",
-      name: "Tascuny spicy & no spicy - تسكني حارة و غير حارة",
+      name: "Tascuny spicy & no spicy",
+      nameAr: "تسكني حارة و غير حارة",
       description: "Tomato Sauce, cheese, Grilled Chicken and Olives",
       image:
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.epicuricloud.com%2Fwp-content%2Fuploads%2F2020%2F02%2FHomemade-Pizza-Crust-Sauce-close-up-front-2048x1365.jpg&f=1&nofb=1&ipt=df786e26f9c68060c0f3ce2694ab7f9b373679b8cef40d37ec7903dc032ed8a8&ipo=images",
@@ -38,7 +41,8 @@ const page = async () => {
     },
     {
       id: "3",
-      name: "Roka Pizza - بيتزا روكا",
+      name: "Roka Pizza",
+      nameAr: "بيتزا روكا",
       description:
         "Tomato Sauce, cheese, Jirjir, Fresh Mushroom and Dried Tomato",
       image:
@@ -51,7 +55,8 @@ const page = async () => {
     },
     {
       id: "4",
-      name: "Pizza Pepperoni - بيتزا ببروني",
+      name: "Pizza Pepperoni",
+      nameAr: "بيتزا ببروني",
       description: "Tomato Sauce, cheese and Smoked Beef Pepperoni",
       image:
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Friotfest.org%2Fwp-content%2Fuploads%2F2016%2F10%2FPepperoni_1.jpg&f=1&nofb=1&ipt=e86954b8021c47a7fecf7a1d653101e4551d3fae836e6673f8965134d023c693&ipo=images",
@@ -63,7 +68,8 @@ const page = async () => {
     },
     {
       id: "5",
-      name: "Pasta Mix - باستا مكس",
+      name: "Pasta Mix",
+      nameAr: "باستا مكس",
       description:
         "Shrimp, Chicken, Hotdog, Mushroom, VEG, Cheese and Mix Sauce",
       image:
@@ -75,7 +81,8 @@ const page = async () => {
     },
     {
       id: "6",
-      name: "Futtuchini Afredo - فوتشيني الفريدو",
+      name: "Futtuchini Afredo",
+      nameAr: "فوتشيني الفريدو",
       description:
         "Chicken, Mushroom, Greenbel, Permisan, Mozarella, White Sauce and Cream",
       image:
@@ -88,7 +95,8 @@ const page = async () => {
     },
     {
       id: "7",
-      name: "Pasta Tiano - باستا تيانو",
+      name: "Pasta Tiano",
+      nameAr: "باستا تيانو",
       description:
         "Grilled Chicken, Fresh Mushroom, VEG, Garlic, Permisan, Mozzarella, Pink Sauce and Cream",
       image:
@@ -101,7 +109,8 @@ const page = async () => {
     },
     {
       id: "8",
-      name: "Pasta Vince - باستا فينيسيا",
+      name: "Pasta Vince",
+      nameAr: "باستا فينيسيا",
       description:
         "Grilled Chicken, Fresh Mushroom, VEG, Garlic, Permisan, Mozzarella, Pink Sauce and Cream",
       image:
@@ -114,7 +123,8 @@ const page = async () => {
     },
     {
       id: "9",
-      name: "Spaghetti Plermo - سباجتي بليرمو",
+      name: "Spaghetti Plermo",
+      nameAr: "سباجتي بليرمو",
       description: "Chicken, VEG and SOY Sauce",
       image:
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd1mlbwr23caxox.cloudfront.net%2Fsmulweb_images%2F125115-spaghetti-palermo.png&f=1&nofb=1&ipt=2e30e9959112c3a82152e1bbe13c6112e0094e2f7da4b63c32eef2d5768b6674&ipo=images",
@@ -125,7 +135,8 @@ const page = async () => {
     },
     {
       id: "10",
-      name: "Spaghetti Juliano - سباجتي جوليانو",
+      name: "Spaghetti Juliano",
+      nameAr: "سباجتي جوليانو",
       description: "Chicken, VEG and Red Sauce",
       image:
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.yimg.com%2Fuu%2Fapi%2Fres%2F1.2%2Frck8_jNf.BTf9Ek70uM5LQ--~B%2FaD0xMDA1O3c9MTQxNjtzbT0xO2FwcGlkPXl0YWNoeW9u%2Fhttps%3A%2F%2Fs.yimg.com%2Fcd%2Fresizer%2F2.0%2FFIT_TO_WIDTH-w1416%2F994ccac5ffb8b76215091aa0e3f3e455dda55669.jpg&f=1&nofb=1&ipt=68a7944813fca2336f67d78e033315949139bf37c651e16b354d999c9f4c2fc1&ipo=images",
@@ -136,7 +147,8 @@ const page = async () => {
     },
     {
       id: "11",
-      name: "Mushroom Soup - شوربة الفطر",
+      name: "Mushroom Soup",
+      nameAr: "شوربة الفطر",
       description: "Mushroom with Cream",
       image:
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.deliveryhero.io%2Fimage%2Ffoodpanda%2Frecipes%2Fmushroom-soup-recipe-1.jpg&f=1&nofb=1&ipt=651ae7460aacf3fbcab8b2b664a5b5245bb3b9f0674bdab4a488c9158ce7bc46&ipo=images",
@@ -147,7 +159,8 @@ const page = async () => {
     },
     {
       id: "12",
-      name: "Chicken Soup - شوربة دجاج",
+      name: "Chicken Soup",
+      nameAr: "شوربة دجاج",
       description: "Chicken and Corn with Cream",
       image:
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhealthylivinglinks.com%2Fwp-content%2Fuploads%2F2019%2F09%2Fchickensoup-min.png&f=1&nofb=1&ipt=c8453a2439fcf43a5e370c1eb176c0e3b83620edf06e9574fa44f2bd484cd89a&ipo=images",
@@ -158,7 +171,8 @@ const page = async () => {
     },
     {
       id: "13",
-      name: "Ceaser Salad - سلطة سيزر",
+      name: "Ceaser Salad",
+      nameAr: "سلطة سيزر",
       description:
         "American Lettuce, Grilled Chicken, Cheese Permisan, Dry Bread and Ranch Sauce",
       image:
@@ -170,7 +184,8 @@ const page = async () => {
     },
     {
       id: "14",
-      name: "Jirjir Salad - سلطة الجرجير",
+      name: "Jirjir Salad",
+      nameAr: "سلطة الجرجير",
       description:
         "Jirjir, Fresh Mushroom, Pine Nuts, Cheese Permisan, Dried Tomato, Red Onion With Palsamic Sauce",
       image:
@@ -182,7 +197,8 @@ const page = async () => {
     },
     {
       id: "15",
-      name: "Dynamite Shrimp - دينامت ربيان",
+      name: "Dynamite Shrimp",
+      nameAr: "دينامت ربيان",
       description: "Fried Shrimp with Dynamite Sauce",
       image:
         "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Firepo.primecp.com%2F2019%2F02%2F402087%2FDynamite-Shrimp-_ExtraLarge1000_ID-3102085.jpg%3Fv%3D3102085&f=1&nofb=1&ipt=91ccbaae721cb9f0fb129e657fa207e171654801b2b07e7f7f82c9175d9be971&ipo=images",
@@ -193,7 +209,8 @@ const page = async () => {
     },
     {
       id: "16",
-      name: "French Fries - بطاطس مقلي",
+      name: "French Fries",
+      nameAr: "بطاطس مقلي",
       description: "French Fries",
       image:
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thespruceeats.com%2Fthmb%2FIHKuXcx3uUI1IWkM_cnnQdFH-zQ%3D%2F3485x2323%2Ffilters%3Afill(auto%2C1)%2Fhow-to-make-homemade-french-fries-2215971-hero-01-02f62a016f3e4aa4b41d0c27539885c3.jpg&f=1&nofb=1&ipt=674766a5346c19beab5f39a65809e6578e2538f446717e406d8013880d261445&ipo=images",
@@ -204,7 +221,8 @@ const page = async () => {
     },
     {
       id: "17",
-      name: "Chicken Qasadiya - كسادية دجاج",
+      name: "Chicken Qasadiya",
+      nameAr: "كسادية دجاج",
       description:
         "Tortilla, Grilled Chicken, Cheese, Tomato and Sauce Special",
       image:
