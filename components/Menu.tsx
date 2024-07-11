@@ -6,10 +6,13 @@ import location from "../public/location.svg";
 import mainlogo from "../public/pdrr.png";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { Button } from "./ui/button";
+import { getCookie, setCookie } from "@/app/cookie/setCookie";
 const Menu = () => {
   const nav: any = useRef<HTMLDivElement>(null);
   const [navV, setNaV] = useState<any>();
   const [current, setCurrent] = useState("pizza");
+  const [English, setEnglish] = useState<string>("arabic");
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
@@ -17,9 +20,34 @@ const Menu = () => {
     });
     observer.observe(nav.current);
   }, []);
+  const coo = (data: string) => {
+    setCookie(data);
+  };
+  const handleCookie = async () => {
+    const c: any = await getCookie();
+    setEnglish(c);
+  };
+  useEffect(() => {
+    handleCookie();
+    console.log(English);
+  }, [English, handleCookie]);
 
   return (
     <div className="h-full  flex justify-center flex-col overflow-x-hidden">
+      <div className="z-10 flex gap-5 justify-center">
+        <Button
+          className={`${English === "arabic" ? "hidden" : ""}`}
+          onClick={() => coo("arabic")}
+        >
+          For Arabic click here
+        </Button>
+        <Button
+          className={`${English === "english" ? "hidden" : ""}`}
+          onClick={() => coo("english")}
+        >
+          For English click here
+        </Button>
+      </div>
       <div className="h-[500px] bg-[url(https://d8aaen7rph5y9.cloudfront.net/app/mediafiles/t_1657715983_7yju44/restaurants/-_a.toulanwagyu.sa_16623608132985244.jpg)] bg-contain z-[3] absolute top-[-200px]  left-0 right-0  "></div>{" "}
       <div
         className="flex justify-center flex-col pt-64 z-[17] items-center
@@ -92,7 +120,9 @@ const Menu = () => {
                     width={300}
                     height={300}
                   />
-                  <span>{!navV ? "CQ" : "Qasadiya"}</span>
+                  <span className="text-[12px]">
+                    {English === "english" ? "Qasadiya" : "كسادية"}
+                  </span>
                 </Link>
               </div>
               <div
@@ -114,7 +144,7 @@ const Menu = () => {
                     height={300}
                   />
                   <span className={`${!navV ? "text-[12px]" : ""}`}>
-                    Appetizer
+                    {English === "english" ? "Appetizer" : "مقبلات"}
                   </span>
                 </Link>
               </div>
@@ -133,7 +163,7 @@ const Menu = () => {
                     width={300}
                     height={300}
                   />
-                  <span>Salad</span>
+                  <span>{English === "english" ? "Salad" : "سلطات"}</span>
                 </Link>
               </div>
               <div
@@ -151,7 +181,7 @@ const Menu = () => {
                     width={300}
                     height={300}
                   />
-                  <span>Soup</span>
+                  <span>{English === "english" ? "Soup" : "شوربة"}</span>
                 </Link>
               </div>
               <div
@@ -169,7 +199,7 @@ const Menu = () => {
                     width={300}
                     height={300}
                   />
-                  <span>Pasta</span>
+                  <span>{English === "english" ? "Pasta" : "باستا"}</span>
                 </Link>
               </div>
               <div
@@ -187,7 +217,7 @@ const Menu = () => {
                     width={300}
                     height={300}
                   />
-                  <span>Pizza</span>
+                  <span>{English === "english" ? "Pizza" : "بيتزا"}</span>
                 </Link>
               </div>
             </div>

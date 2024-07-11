@@ -1,3 +1,4 @@
+"use server";
 import Menu from "@/components/Menu";
 import Sections from "@/components/Sections";
 import React from "react";
@@ -11,7 +12,7 @@ type Data = {
   section: string;
   longDescription: string;
 };
-const page = () => {
+const page = async () => {
   const data: Data[] = [
     {
       id: "1",
