@@ -30,7 +30,7 @@ const Menu = () => {
   useEffect(() => {
     handleCookie();
     console.log(English);
-  }, [English]);
+  }, [English, handleCookie]);
 
   return (
     <div className="h-full  flex justify-center flex-col overflow-x-hidden">
