@@ -6,8 +6,8 @@ import location from "../public/location.svg";
 import mainlogo from "../public/pdrr.png";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { Button } from "./ui/button";
 import { getCookie, setCookie } from "@/app/cookie/setCookie";
+import Lang from "./Lang";
 const Menu = () => {
   const nav: any = useRef<HTMLDivElement>(null);
   const [navV, setNaV] = useState<any>();
@@ -34,8 +34,8 @@ const Menu = () => {
 
   return (
     <div className="h-full  flex justify-center flex-col overflow-x-hidden">
-      <div className="z-10 flex gap-5 justify-center">
-        <Button
+      {/* <div className="z-10 flex gap-5 justify-center"> */}
+      {/* <Button
           className={`${English === "arabic" ? "hidden" : ""}`}
           onClick={() => coo("arabic")}
         >
@@ -46,13 +46,16 @@ const Menu = () => {
           onClick={() => coo("english")}
         >
           For English click here
-        </Button>
-      </div>
+        </Button> */}
+      {/* </div> */}
       <div className="h-[500px] bg-[url(https://d8aaen7rph5y9.cloudfront.net/app/mediafiles/t_1657715983_7yju44/restaurants/-_a.toulanwagyu.sa_16623608132985244.jpg)] bg-contain z-[3] absolute top-[-200px]  left-0 right-0  "></div>{" "}
       <div
         className="flex justify-center flex-col pt-64 z-[17] items-center
       "
       >
+        <div className="w-full flex justify-start">
+          <Lang />
+        </div>
         <div className="mb-5 bg-[#86794c] rounded-full p-3">
           <Image
             className=""
