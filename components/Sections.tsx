@@ -164,19 +164,16 @@ const Sections = (data: any) => {
                 loading="lazy"
               />
               <h2 className="text-white font-mono font-semibold text-base text-left pt-1">
-                {card.name}
+                {en === "english" ? card.name : card.nameAr}
               </h2>
               <div className=" flex gap-3 items-center w-full">
                 <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
-                  SAR {card.price}
+                  {en === "english" ? "SAR" : "ريال"} {card.price}
                 </h3>
                 <span className="text-white">{card.calories} Calorie</span>
               </div>
               <p className="text-white opacity-80 text-[14px] leading-none w-full">
-                {card.longDescription}
-              </p>
-              <p className="text-white opacity-80 text-[14px] leading-none w-full">
-                {card.description}
+                {en === "english" ? card.description : card.longDescription}
               </p>
             </section>
           </Link>
@@ -202,19 +199,16 @@ const Sections = (data: any) => {
                 loading="lazy"
               />
               <h2 className="text-white font-mono font-semibold text-base text-left pt-1">
-                {card.name}
+                {en === "english" ? card.name : card.nameAr}
               </h2>
               <div className=" flex gap-3 items-center w-full">
                 <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
-                  SAR {card.price}
+                  {en === "english" ? "SAR" : "ريال"} {card.price}
                 </h3>
                 <span className="text-white">{card.calories} Calorie</span>
               </div>
               <p className="text-white opacity-80 text-[14px] leading-none w-full">
-                {card.longDescription}
-              </p>{" "}
-              <p className="text-white opacity-80 text-[14px] leading-none w-full">
-                {card.description}
+                {en === "english" ? card.description : card.longDescription}
               </p>
             </section>
           </Link>
