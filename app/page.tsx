@@ -17,7 +17,7 @@ export default function Home() {
         }
       >
         <h3 className="text-white">
-          Developed by <span className="text-[blue]">UramIT Eg</span>
+          Developed by <span className="text-[#679efc] ml-1"> UramIT Eg</span>
         </h3>
       </Link>
     </main>
