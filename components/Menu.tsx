@@ -72,7 +72,11 @@ const Menu = () => {
           </h4>
         </div>
         <div className="flex gap-3 mb-5 mt-[10px]">
-          <Link href={"https://www.instagram.com/pastaderome28"}>
+          <Link
+            href={
+              "https://www.instagram.com/pastaderoma?igsh=MW16cHljM2owa28zcQ=="
+            }
+          >
             <Image src={instagram} width={25} height={25} alt="" />
           </Link>
           <Link
