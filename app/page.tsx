@@ -12,7 +12,7 @@ export default function Home() {
       id: 1,
       title: "Menu - قائمة الطعام",
       image: menu,
-      link: "/",
+      link: "/menu",
       alt: "Menu logo",
     },
     {
