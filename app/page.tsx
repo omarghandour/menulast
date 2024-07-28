@@ -5,32 +5,39 @@ import instagram from "../public/instagram-svgrepo-com.svg";
 import tiktok from "../public/tiktok-svgrepo-com.svg";
 import location from "../public/location.svg";
 import gmail from "../public/gmail-svgrepo-com.svg";
-
+import menu from "../public/menu-navigation-grid-1528-svgrepo-com.svg";
 export default function Home() {
   const data: object[] = [
     {
       id: 1,
+      title: "Menu - قائمة الطعام",
+      image: menu,
+      link: "/",
+      alt: "Menu logo",
+    },
+    {
+      id: 2,
       title: "Instagram",
       image: instagram,
       link: "https://www.instagram.com/pastaderoma?igsh=MW16cHljM2owa28zcQ==",
       alt: "Instagram Logo",
     },
     {
-      id: 2,
+      id: 3,
       title: "TikTok",
       image: tiktok,
       link: "https://www.tiktok.com/@pastaderome28?_t=8nT15UtLrh2&_r=1",
       alt: "TikTok Logo",
     },
     {
-      id: 3,
+      id: 4,
       title: "Location",
       image: location,
       link: "https://maps.app.goo.gl/Z9M6YszpyVbDxGtv8?g_st=com.google.maps.preview.copy",
       alt: "Location Logo",
     },
     {
-      id: 4,
+      id: 5,
       title: "Contact",
       image: gmail,
       link: "mailto:info@pastaderoma.com",
@@ -47,10 +54,10 @@ export default function Home() {
           <Link
             href={item.link}
             key={item.id}
-            className="flex gap-3 mb-3 backdrop-blur-md bg-white/90 shadow-sm shadow-white p-3 rounded-2xl w-[90%] trann duration-1000 items-center"
+            className="flex gap-3 mb-3 backdrop-blur-md bg-white/90 shadow-sm shadow-white p-3 rounded-2xl w-[90%] trann duration-1000 items-center justify-between"
           >
-            <Image src={item.image} alt={item.alt} width={30} height={30} />
             <h2>{item.title}</h2>
+            <Image src={item.image} alt={item.alt} width={30} height={30} />
           </Link>
         ))}
       </div>
