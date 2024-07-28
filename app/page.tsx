@@ -1,11 +1,10 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import instagram from "../public/instagram-svgrepo-com.svg";
 import tiktok from "../public/tiktok-svgrepo-com.svg";
 import location from "../public/location.svg";
-import gmail from "../public/gmail-svgrepo-com.svg";
 import menu from "../public/menu-navigation-grid-1528-svgrepo-com.svg";
+import logo from "../public/pdrr.png";
 export default function Home() {
   const data1: any = [
     {
@@ -47,7 +46,10 @@ export default function Home() {
     // },
   ];
   return (
-    <main className="bg-[url('../public/home1.png')] bg-center bg-cover h-[100svh] flex flex-col justify-end items-center">
+    <main className="bg-[#252525] h-[100svh] flex flex-col justify-end items-center">
+      <div className=" absolute top-1/4">
+        <Image loading="lazy" src={logo} alt="" width={300} height={300} />
+      </div>
       <Link
         href={data1[0].link}
         className="flex gap-3 mb-3 backdrop-blur-md bg-white/50  shadow-white p-3 rounded-2xl w-[60%] trann duration-1000 items-center justify-between"
