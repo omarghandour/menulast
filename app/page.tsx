@@ -7,7 +7,7 @@ import location from "../public/location.svg";
 import gmail from "../public/gmail-svgrepo-com.svg";
 import menu from "../public/menu-navigation-grid-1528-svgrepo-com.svg";
 export default function Home() {
-  const data: object[] = [
+  const data1: any = [
     {
       id: 1,
       title: "Menu - قائمة الطعام",
@@ -15,38 +15,47 @@ export default function Home() {
       link: "/menu",
       alt: "Menu logo",
     },
+  ];
+  const data: any = [
     {
-      id: 2,
-      title: "Instagram",
+      id: 1,
+      title: "Instagram - انستجرام",
       image: instagram,
       link: "https://www.instagram.com/pastaderoma?igsh=MW16cHljM2owa28zcQ==",
       alt: "Instagram Logo",
     },
     {
-      id: 3,
-      title: "TikTok",
+      id: 2,
+      title: "TikTok - تيكتوك",
       image: tiktok,
       link: "https://www.tiktok.com/@pastaderome28?_t=8nT15UtLrh2&_r=1",
       alt: "TikTok Logo",
     },
     {
-      id: 4,
-      title: "Location",
+      id: 3,
+      title: "Location - الموقع",
       image: location,
       link: "https://maps.app.goo.gl/Z9M6YszpyVbDxGtv8?g_st=com.google.maps.preview.copy",
       alt: "Location Logo",
     },
-    {
-      id: 5,
-      title: "Contact",
-      image: gmail,
-      link: "mailto:info@pastaderoma.com",
-      alt: "Email Logo",
-    },
+    // {
+    //   id: 4,
+    //   title: "Contact - تواصل معنا",
+    //   image: gmail,
+    //   link: "mailto:info@pastaderoma.com",
+    //   alt: "Email Logo",
+    // },
   ];
   return (
-    <main className="bg-[#202020] h-[100svh] flex flex-col justify-end ">
-      <div className="h-[90%] flex-col center gap-4 ">
+    <main className="bg-[url('../public/home1.png')] bg-center bg-cover h-[100svh] flex flex-col justify-end items-center">
+      <Link
+        href={data1[0].link}
+        className="flex gap-3 mb-3 backdrop-blur-md bg-white/50  shadow-white p-3 rounded-2xl w-[60%] trann duration-1000 items-center justify-between"
+      >
+        <h2>{data1[0].title}</h2>
+        <Image src={data1[0].image} alt={data1[0].alt} width={30} height={30} />
+      </Link>
+      <div className="h-[81%] flex-col flex items-center justify-end gap-1 mb-8">
         <h1 className="text-center text-white  font-bold text-[16px]">
           شارع زامل العبدالله السليم،, Unaizah 56241, Saudi Arabia
         </h1>
@@ -54,7 +63,7 @@ export default function Home() {
           <Link
             href={item.link}
             key={item.id}
-            className="flex gap-3 mb-3 backdrop-blur-md bg-white/90 shadow-sm shadow-white p-3 rounded-2xl w-[90%] trann duration-1000 items-center justify-between"
+            className="flex gap-3 mb-3 backdrop-blur-md bg-white/50  shadow-white p-3 rounded-2xl w-[90%] trann duration-1000 items-center justify-between"
           >
             <h2>{item.title}</h2>
             <Image src={item.image} alt={item.alt} width={30} height={30} />
