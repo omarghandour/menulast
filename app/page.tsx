@@ -4,7 +4,7 @@ import instagram from "../public/instagram-svgrepo-com.svg";
 import tiktok from "../public/tiktok-svgrepo-com.svg";
 import location from "../public/location.svg";
 import menu from "../public/menu-navigation-grid-1528-svgrepo-com.svg";
-import logo from "../public/pdrr.png";
+import logo from "../public/pdr.png";
 export default function Home() {
   const data1: any = [
     {
@@ -47,30 +47,37 @@ export default function Home() {
   ];
   return (
     <main className="bg-[#252525] h-[100svh] flex flex-col justify-end items-center">
-      <div className=" absolute top-1/4">
-        <Image loading="lazy" src={logo} alt="" width={300} height={300} />
-      </div>
-      <Link
-        href={data1[0].link}
-        className="flex gap-3 mb-3 backdrop-blur-md bg-white/50  shadow-white p-3 rounded-2xl w-[60%] trann duration-1000 items-center justify-between"
-      >
-        <h2>{data1[0].title}</h2>
-        <Image src={data1[0].image} alt={data1[0].alt} width={30} height={30} />
-      </Link>
-      <div className="h-[81%] flex-col flex items-center justify-end gap-1 mb-8">
+      <div className="h-full flex-col flex items-center justify-evenly gap-1 mb-8">
+        <Link
+          href={data1[0].link}
+          className="flex gap-3 mb-3 backdrop-blur-md bg-white/50  shadow-white p-3 rounded-2xl w-[60%] trann duration-1000 items-center justify-between"
+        >
+          <h2>{data1[0].title}</h2>
+          <Image
+            src={data1[0].image}
+            alt={data1[0].alt}
+            width={30}
+            height={30}
+          />
+        </Link>
+        <div className=" ">
+          <Image src={logo} alt="" width={300} height={300} />
+        </div>
         <h1 className="text-center text-white  font-bold text-[16px]">
           شارع زامل العبدالله السليم،, Unaizah 56241, Saudi Arabia
         </h1>
-        {data.map((item: any) => (
-          <Link
-            href={item.link}
-            key={item.id}
-            className="flex gap-3 mb-3 backdrop-blur-md bg-white/50  shadow-white p-3 rounded-2xl w-[90%] trann duration-1000 items-center justify-between"
-          >
-            <h2>{item.title}</h2>
-            <Image src={item.image} alt={item.alt} width={30} height={30} />
-          </Link>
-        ))}
+        <div className="w-full center flex-col">
+          {data.map((item: any) => (
+            <Link
+              href={item.link}
+              key={item.id}
+              className="flex gap-3 mb-3 backdrop-blur-md bg-white/50  shadow-white p-3 rounded-2xl w-[90%] trann duration-1000 items-center justify-between"
+            >
+              <h2>{item.title}</h2>
+              <Image src={item.image} alt={item.alt} width={30} height={30} />
+            </Link>
+          ))}
+        </div>
       </div>
     </main>
     // <main className="h-[100svh] flex-col items-center flex justify-between w-full bg-[url('../public/home1.png')] bg-center bg-cover">
