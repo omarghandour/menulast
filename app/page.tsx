@@ -5,6 +5,7 @@ import tiktok from "../public/tiktok-svgrepo-com.svg";
 import location from "../public/location.svg";
 import menu from "../public/menu-navigation-grid-1528-svgrepo-com.svg";
 import logo from "../public/pdr.png";
+import contact from "../public/contact-phone-talking-svgrepo-com.svg";
 import { Button } from "@/components/ui/button";
 export default function Home() {
   const data1: any = [
@@ -51,7 +52,7 @@ export default function Home() {
       <div className="h-full flex-col flex items-center justify-evenly gap-1 mb-8">
         <Link
           href={data1[0].link}
-          className="flex gap-3 mb-3 backdrop-blur-md bg-white/50  shadow-white p-3 rounded-2xl w-[90%] trann duration-1000 items-center justify-between"
+          className="flex gap-3 mb-3 mt-5 backdrop-blur-md bg-white/50  shadow-white p-3 rounded-2xl w-[90%] trann duration-1000 items-center justify-between"
         >
           <h2>{data1[0].title}</h2>
           <Image
@@ -65,7 +66,7 @@ export default function Home() {
           <Image src={logo} alt="" width={300} height={300} />
         </div>
         <h1 className="text-center text-white  font-bold text-[16px]">
-          شارع زامل العبدالله السليم،, Unaizah 56241, Saudi Arabia
+          شارع زامل العبدالله السليم
         </h1>
         <div className="w-full center flex-col">
           {data.map((item: any) => (
@@ -79,8 +80,14 @@ export default function Home() {
             </Link>
           ))}
           <a href="tel:0500643218" className="w-[90%] trann">
-            <Button className="backdrop-blur-md bg-white/50  shadow-white tex-white font-bold w-full rounded-2xl text-black">
-              Contact Us <span className="px-1">تواصل معنا</span>
+            <Button className="backdrop-blur-md bg-white/50 shadow-white tex-white font-bold w-full rounded-2xl text-black flex justify-between ">
+              <span className="px-1">تواصل معنا-Contact Us </span>
+              <Image
+                src={contact}
+                alt={"contact icon"}
+                width={30}
+                height={30}
+              />
             </Button>
           </a>
         </div>
