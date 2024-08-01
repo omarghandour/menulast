@@ -5,11 +5,12 @@ import tiktok from "../public/tiktok-svgrepo-com.svg";
 import location from "../public/location.svg";
 import menu from "../public/menu-navigation-grid-1528-svgrepo-com.svg";
 import logo from "../public/pdr.png";
+import { Button } from "@/components/ui/button";
 export default function Home() {
   const data1: any = [
     {
       id: 1,
-      title: "Menu - قائمة الطعام",
+      title: "Menu - قائمة الطلب",
       image: menu,
       link: "/menu",
       alt: "Menu logo",
@@ -50,7 +51,7 @@ export default function Home() {
       <div className="h-full flex-col flex items-center justify-evenly gap-1 mb-8">
         <Link
           href={data1[0].link}
-          className="flex gap-3 mb-3 backdrop-blur-md bg-white/50  shadow-white p-3 rounded-2xl w-[60%] trann duration-1000 items-center justify-between"
+          className="flex gap-3 mb-3 backdrop-blur-md bg-white/50  shadow-white p-3 rounded-2xl w-[90%] trann duration-1000 items-center justify-between"
         >
           <h2>{data1[0].title}</h2>
           <Image
@@ -77,6 +78,11 @@ export default function Home() {
               <Image src={item.image} alt={item.alt} width={30} height={30} />
             </Link>
           ))}
+          <a href="tel:0500643218" className="w-[90%] trann">
+            <Button className="backdrop-blur-md bg-white/50  shadow-white tex-white font-bold w-full rounded-2xl text-black">
+              Contact Us <span className="px-1">تواصل معنا</span>
+            </Button>
+          </a>
         </div>
       </div>
     </main>
