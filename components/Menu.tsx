@@ -121,8 +121,8 @@ const Menu = () => {
                   onClick={() => setCurrent("chickenQasadiya")}
                 >
                   <Image
-                    className="rounded-full"
-                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kyleecooks.com%2Fwp-content%2Fuploads%2F2021%2F01%2FChicken-Quesadillas-14.jpg&f=1&nofb=1&ipt=8fd3e1a5f75fa535e0f1bd3713fe1b7376b3952fff946a8bb7707c3849e2a166&ipo=images"
+                    className="rounded-full max-w-[75%] mx-auto"
+                    src="https://github.com/omarghandour/photos/blob/main/menu/17.jpg?raw=true"
                     alt=""
                     width={300}
                     height={300}
@@ -144,8 +144,8 @@ const Menu = () => {
                   onClick={() => setCurrent("appetizer")}
                 >
                   <Image
-                    className="rounded-full"
-                    src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Firepo.primecp.com%2F2019%2F02%2F402087%2FDynamite-Shrimp-_ExtraLarge1000_ID-3102085.jpg%3Fv%3D3102085&f=1&nofb=1&ipt=91ccbaae721cb9f0fb129e657fa207e171654801b2b07e7f7f82c9175d9be971&ipo=images"
+                    className="rounded-full max-w-[75%] mx-auto"
+                    src="https://github.com/omarghandour/photos/blob/main/menu/16.jpg?raw=true"
                     alt=""
                     width={300}
                     height={300}
@@ -164,8 +164,8 @@ const Menu = () => {
               >
                 <Link href={"#salad"} onClick={() => setCurrent("salad")}>
                   <Image
-                    className="rounded-full"
-                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thespruceeats.com%2Fthmb%2FZ6IWF7c9zywuU9maSIimGLbHoI4%3D%2F3000x2000%2Ffilters%3Afill(auto%2C1)%2Fclassic-caesar-salad-recipe-996054-Hero_01-33c94cc8b8e841ee8f2a815816a0af95.jpg&f=1&nofb=1&ipt=ab224fa85fa60a5a3cf146c308554a7f04fe367cf25c80001e7789b9c131e18a&ipo=images"
+                    className="rounded-full max-w-[75%] mx-auto"
+                    src="https://github.com/omarghandour/photos/blob/main/menu/14.jpg?raw=true"
                     alt=""
                     width={300}
                     height={300}
@@ -182,8 +182,8 @@ const Menu = () => {
               >
                 <Link href={"#soup"} onClick={() => setCurrent("soup")}>
                   <Image
-                    className="rounded-full"
-                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.deliveryhero.io%2Fimage%2Ffoodpanda%2Frecipes%2Fmushroom-soup-recipe-1.jpg&f=1&nofb=1&ipt=651ae7460aacf3fbcab8b2b664a5b5245bb3b9f0674bdab4a488c9158ce7bc46&ipo=images"
+                    className="rounded-full max-w-[75%] mx-auto"
+                    src="https://github.com/omarghandour/photos/blob/main/menu/12.jpg?raw=true"
                     alt=""
                     width={300}
                     height={300}
@@ -200,8 +200,8 @@ const Menu = () => {
               >
                 <Link href={"#pasta"} onClick={() => setCurrent("pasta")}>
                   <Image
-                    className="rounded-full"
-                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flestta.com%2Fwp-content%2Fuploads%2F2021%2F03%2FPasta-2048x1366.jpg&f=1&nofb=1&ipt=db470ccc6cfe7e90f538389522c3b2f3173be9d24da7a21a8b1f7074354b046e&ipo=images"
+                    className="rounded-full max-w-[75%] mx-auto"
+                    src="https://github.com/omarghandour/photos/blob/main/menu/1.jpg?raw=true"
                     alt=""
                     width={300}
                     height={300}
@@ -218,11 +218,11 @@ const Menu = () => {
               >
                 <Link href={"#pizza"} onClick={() => setCurrent("pizza")}>
                   <Image
-                    className="rounded-full"
-                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.biggerbolderbaking.com%2Fwp-content%2Fuploads%2F2021%2F02%2FNew-York-Style-Pizza-Thumbnail1-scaled.jpg&f=1&nofb=1&ipt=62f50d7d79be7e7af34b8f835579c9683915eb0c08bcf9aeee3dc053c5aeff3c&ipo=images"
+                    className="rounded-full max-w-[75%] mx-auto"
+                    src="https://github.com/omarghandour/photos/blob/main/menu/11.jpg?raw=true"
                     alt=""
-                    width={300}
-                    height={300}
+                    width={150}
+                    height={150}
                   />
                   <span>{English === "english" ? "Pizza" : "بيتزا"}</span>
                 </Link>
