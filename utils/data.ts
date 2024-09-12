@@ -16,7 +16,7 @@ const data: Data[] = [
     nameAr: " بيتزا مارجريتا",
     description: "Tomato Sauce, Cheese",
     image:
-      "https://github.com/omarghandour/photos/blob/main/menu/333.jpg?raw=true",
+      "https://github.com/omarghandour/photos/blob/main/menu/photo_5985755204877926914_y.jpg?raw=true",
     price: "25",
     calories: "671",
     section: "pizza",
@@ -28,7 +28,7 @@ const data: Data[] = [
     nameAr: "تسكني حارة و غير حارة",
     description: "Tomato Sauce, cheese, Grilled Chicken and Olives",
     image:
-      "https://github.com/omarghandour/photos/blob/main/menu/222.jpg?raw=true",
+      "https://github.com/omarghandour/photos/blob/main/menu/photo_5985755204877926916_y.jpg?raw=true",
     price: "28",
     calories: "793",
     section: "pizza",
@@ -41,7 +41,7 @@ const data: Data[] = [
     description:
       "Tomato Sauce, cheese, Jirjir, Fresh Mushroom and Dried Tomato",
     image:
-      "https://github.com/omarghandour/photos/blob/main/menu/55.jpg?raw=true",
+      "https://github.com/omarghandour/photos/blob/main/menu/photo_5985755204877926917_y.jpg?raw=true",
     price: "29",
     calories: "678",
     section: "pizza",
@@ -54,7 +54,7 @@ const data: Data[] = [
     nameAr: "بيتزا ببروني",
     description: "Tomato Sauce, cheese and Smoked Beef Pepperoni",
     image:
-      "https://github.com/omarghandour/photos/blob/main/menu/444.jpg?raw=true",
+      "https://github.com/omarghandour/photos/blob/main/menu/photo_5985755204877926915_y.jpg?raw=true",
     price: "28",
     calories: "1165",
     section: "pizza",
@@ -80,7 +80,7 @@ const data: Data[] = [
     description:
       "Chicken, Mushroom, Greenbel, Permisan, Mozarella, White Sauce and Cream",
     image:
-      "https://github.com/omarghandour/photos/blob/main/menu/4.jpg?raw=true",
+      "https://github.com/omarghandour/photos/blob/main/menu/photo_5985755204877926919_y.jpg?raw=true",
     price: "27",
     calories: "954",
     section: "pasta",
@@ -141,6 +141,18 @@ const data: Data[] = [
   },
   {
     id: "11",
+    name: "Spaghetti bolognese",
+    nameAr: "سباجتي بولوجنيس",
+    description: "Chicken, VEG and Red Sauce",
+    image:
+      "https://github.com/omarghandour/photos/blob/main/menu/5.jpg?raw=true",
+    price: "20",
+    calories: "909",
+    section: "pasta",
+    longDescription: "لحم, خضار, صوص احمر",
+  },
+  {
+    id: "12",
     name: "Mushroom Soup",
     nameAr: "شوربة الفطر",
     description: "Mushroom with Cream",
@@ -152,19 +164,19 @@ const data: Data[] = [
     longDescription: "فطر مع كريمة",
   },
   {
-    id: "12",
+    id: "13",
     name: "Chicken Soup",
     nameAr: "شوربة دجاج",
     description: "Chicken and Corn with Cream",
     image:
-      "https://github.com/omarghandour/photos/blob/main/menu/soupp.jpg?raw=true",
+      "https://github.com/omarghandour/photos/blob/main/menu/photo_5985755204877926921_y.jpg?raw=true",
     price: "16",
     calories: "117",
     section: "soup",
     longDescription: "دجاج, ذرة مع كريمة",
   },
   {
-    id: "13",
+    id: "14",
     name: "Ceaser Salad",
     nameAr: "سلطة سيزر",
     description:
@@ -177,7 +189,7 @@ const data: Data[] = [
     longDescription: "خس امريكي, دجاج مشوي, جبن برميزان, خبز مجفف, صوص رنش",
   },
   {
-    id: "14",
+    id: "15",
     name: "Jirjir Salad",
     nameAr: "سلطة الجرجير",
     description:
@@ -190,7 +202,7 @@ const data: Data[] = [
     longDescription: "جرجير, فطر, سنوبر, جبن, طماطم مجفف, بصل, صوص بالسامك",
   },
   {
-    id: "15",
+    id: "16",
     name: "Dynamite Shrimp",
     nameAr: "دينامت ربيان",
     description: "Fried Shrimp with Dynamite Sauce",
@@ -202,7 +214,7 @@ const data: Data[] = [
     longDescription: "ربيان مقلي, صوص داينمت",
   },
   {
-    id: "16",
+    id: "17",
     name: "French Fries",
     nameAr: "بطاطس مقلي",
     description: "French Fries",
@@ -214,7 +226,7 @@ const data: Data[] = [
     longDescription: "بطاطس مقلية",
   },
   {
-    id: "17",
+    id: "18",
     name: "Chicken Qasadiya",
     nameAr: "كسادية دجاج",
     description: "Tortilla, Grilled Chicken, Cheese, Tomato and Sauce Special",
