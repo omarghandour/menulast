@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   title: "Pasta de Roma",
   description:
     "Pasta De Rome 🇮🇹 Feel the original taste of Rome’s Dishes Come & Enjoy your delicious dishes",
+  authors: [
+    { name: "OmarGhandour", url: "https://github.com/omarghandour" },
+    { name: "UramIt Eg" },
+  ],
+  creator: "OmarGhandour",
 };
 
 export default function RootLayout({
