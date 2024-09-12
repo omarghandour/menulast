@@ -121,19 +121,20 @@ const data: Data[] = [
     nameAr: "سباجتي بليرمو",
     description: "Chicken, VEG and SOY Sauce",
     image:
-      "https://github.com/omarghandour/photos/blob/main/menu/2.jpg?raw=true",
+      "https://github.com/omarghandour/photos/blob/main/menu/3.jpg?raw=true",
     price: "20",
     calories: "679",
     section: "pasta",
     longDescription: "دجاج, خضار, صلصة صويا",
   },
+  //
   {
     id: "10",
     name: "Spaghetti Juliano",
     nameAr: "سباجتي جوليانو",
     description: "Chicken, VEG and Red Sauce",
     image:
-      "https://github.com/omarghandour/photos/blob/main/menu/3.jpg?raw=true",
+      "https://github.com/omarghandour/photos/blob/main/menu/2.jpg?raw=true",
     price: "20",
     calories: "909",
     section: "pasta",
@@ -142,7 +143,7 @@ const data: Data[] = [
   {
     id: "11",
     name: "Spaghetti bolognese",
-    nameAr: "سباجتي بولوجنيس",
+    nameAr: "سباجتي بولوغنيز",
     description: "Chicken, VEG and Red Sauce",
     image:
       "https://github.com/omarghandour/photos/blob/main/menu/5.jpg?raw=true",
