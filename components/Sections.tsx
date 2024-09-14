@@ -100,7 +100,9 @@ const Sections = (data: any) => {
                 <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
                   {en === "english" ? "SAR" : "ريال"} {card.price}
                 </h3>
-                <span className="text-white">{card.calories} Calorie</span>
+                <span className="text-white">
+                  {card.calories} {en === "english" ? "Calorie" : "سعرة"}{" "}
+                </span>
               </div>
               <p className="text-white opacity-80 text-[14px] leading-none w-full">
                 {en === "english" ? card.description : card.longDescription}
@@ -135,7 +137,9 @@ const Sections = (data: any) => {
                 <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
                   {en === "english" ? "SAR" : "ريال"} {card.price}
                 </h3>
-                <span className="text-white">{card.calories} Calorie</span>
+                <span className="text-white">
+                  {card.calories} {en === "english" ? "Calorie" : "سعرة"}
+                </span>
               </div>
               <p className="text-white opacity-80 text-[14px] leading-none w-full">
                 {en === "english" ? card.description : card.longDescription}
@@ -170,7 +174,9 @@ const Sections = (data: any) => {
                 <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
                   {en === "english" ? "SAR" : "ريال"} {card.price}
                 </h3>
-                <span className="text-white">{card.calories} Calorie</span>
+                <span className="text-white">
+                  {card.calories} {en === "english" ? "Calorie" : "سعرة"}
+                </span>
               </div>
               <p className="text-white opacity-80 text-[14px] leading-none w-full">
                 {en === "english" ? card.description : card.longDescription}
@@ -205,7 +211,9 @@ const Sections = (data: any) => {
                 <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
                   {en === "english" ? "SAR" : "ريال"} {card.price}
                 </h3>
-                <span className="text-white">{card.calories} Calorie</span>
+                <span className="text-white">
+                  {card.calories} {en === "english" ? "Calorie" : "سعرة"}
+                </span>
               </div>
               <p className="text-white opacity-80 text-[14px] leading-none w-full">
                 {en === "english" ? card.description : card.longDescription}
@@ -240,7 +248,9 @@ const Sections = (data: any) => {
                 <h3 className="bg-[#86794c] text-[0.75rem] font-bold text-black rounded-md px-2">
                   {en === "english" ? "SAR" : "ريال"} {card.price}
                 </h3>
-                <span className="text-white">{card.calories} Calorie</span>
+                <span className="text-white">
+                  {card.calories} {en === "english" ? "Calorie" : "سعرة"}
+                </span>
               </div>
               <p className="text-white opacity-80 text-[14px] leading-none w-full">
                 {en === "english" ? card.description : card.longDescription}

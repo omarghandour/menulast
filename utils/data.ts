@@ -113,7 +113,7 @@ const data: Data[] = [
     calories: "804",
     section: "pasta",
     longDescription:
-      "دجاج صحر مشوي, فطر طازج, خضار, ثوم, جبن برميزان, مزريلا, صوص بنك مع كريمة",
+      "ربيان , فطر , خضار , ثوم , جبن , صوص ابيض . قليل من الصوص الأحمر ",
   },
   {
     id: "9",
@@ -143,11 +143,11 @@ const data: Data[] = [
   {
     id: "11",
     name: "Spaghetti bolognese",
-    nameAr: "سباجتي بولوغنيز",
+    nameAr: "سباجتي بولونيز",
     description: "Chicken, VEG and Red Sauce",
     image:
       "https://github.com/omarghandour/photos/blob/main/menu/5.jpg?raw=true",
-    price: "20",
+    price: "25",
     calories: "909",
     section: "pasta",
     longDescription: "لحم, خضار, صوص احمر",

@@ -48,7 +48,8 @@ const Menu = () => {
           For English click here
         </Button> */}
       {/* </div> */}
-      <div className="h-[500px] bg-[url(https://github.com/omarghandour/photos/blob/main/menu/photo_5985755204877926916_y.jpg?raw=true)] bg-cover z-[3] absolute top-[-200px]  left-0 right-0  "></div>{" "}
+      {/*  */}
+      <div className="h-[500px] bg-[url(https://github.com/omarghandour/photos/blob/main/menu/main.jpeg?raw=true)]  bg-contain z-[3] absolute top-[-200px]  left-0 right-0  "></div>{" "}
       <div
         className="flex justify-center flex-col pt-64 z-[17] items-center
       "
